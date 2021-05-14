@@ -1,0 +1,43 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    font-family: raleway, sans-serif;
+    width: 1340px;
+    margin: auto; /* a contrôler*/
+}
+
+header div
+{
+    height: 40px;
+    display: flex;
+    justify-content: space-between; /*permet de mettre les éléments de part et d'autre*/
+    align-items: center;
+}
+
+nav a
+{
+    text-decoration: none; /*permet d'enlever les lignes sous le texte*/
+    border-top: 1px solid #0065fc;
+    padding-top: 12px;   
+}
+nav ul
+{
+    list-style-type: none; /*permet d'enlever les puces devant les éléments de la liste*/
+    display: flex; /*permet d'aligner les éléments sur la  même ligne*/ 
+    font-size: small;
+}
+
+.bleu
+{
+    color: #0065fc;
+}
+nav li
+{
+    margin-right: 30px;
+}
+   
