@@ -4,40 +4,236 @@
     padding: 0;
 }
 
-body 
-{
-    font-family: raleway, sans-serif;
-    width: 1340px;
-    margin: auto; /* a contrôler*/
-}
-
-header div
-{
-    height: 40px;
-    display: flex;
-    justify-content: space-between; /*permet de mettre les éléments de part et d'autre*/
-    align-items: center;
-}
-
-nav a
-{
-    text-decoration: none; /*permet d'enlever les lignes sous le texte*/
-    border-top: 1px solid #0065fc;
-    padding-top: 12px;   
-}
-nav ul
-{
-    list-style-type: none; /*permet d'enlever les puces devant les éléments de la liste*/
-    display: flex; /*permet d'aligner les éléments sur la  même ligne*/ 
-    font-size: small;
-}
-
 .bleu
 {
     color: #0065fc;
 }
-nav li
+
+.none
 {
-    margin-right: 30px;
+    color:black;
 }
-   
+
+.grey
+{
+    color: #f2f2f2;
+}
+body 
+{
+    font-family: raleway, sans-serif;
+    width: 1340px;
+    margin:   0 auto
+}
+
+a :hover
+{
+    color: red;
+}
+header div
+
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+nav ul
+{
+    display: flex;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+/*#Filtres
+{
+    display: flex;
+    
+}*/
+
+img
+{
+    display: block;
+    margin: auto;
+}
+
+#infos
+{
+    margin-top: 40PX;
+}
+
+#Recherche
+{
+border: 1px #f2f2f2 solid;
+width: 421px;
+height: 51px;
+}
+
+#Filtres i 
+{
+    color: #0065fc;
+}
+
+#Hébergements
+{
+    height: 625px;
+    background-color: red;
+    margin-top: 40px;
+    display: flex;
+}
+
+.titre
+{
+    margin-left: 40px;
+    margin-top: 45px;
+}
+
+.all
+{
+    float: left;
+    height: 625px;
+    background-color: #f2f2f2;
+    border-radius: 20px
+    /*margin-right: 40px;*/
+}
+
+#Hébergement
+{
+  
+    width: 800px;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px 40px 40px 40px;
+    
+}
+
+.logements img
+{
+    width: 235px;
+    height: 115px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.logements
+{
+    width: 250px;
+    height: 200px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+#Populaires
+{
+    height: 625px;
+    background-color: blue;
+}
+
+.most
+{
+    width: 345px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25px 40px 40px 40px;
+}
+
+.popular img
+{
+    width: 130px;
+    height: 135px;
+    float: left;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.popular
+{
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+#Activités
+{
+    height: 615px;
+}
+
+#Activités h2
+{
+    margin-top: 60px;
+}
+
+.last
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 450px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.activity
+{
+    width: 305px;
+    height: 450px;
+    background-color: #ffffff;
+}
+
+.grand 
+{
+    width: 305px;
+    height: 390px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.pomegues
+{
+    width: 305px;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.frioul
+{
+    order: 2;
+    width: 305px;
+    height: 110px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.notre_dame
+{
+    width: 305px;
+    height: 142px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.longchamp
+{
+    width: 305px;
+    height: 155px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+footer
+{
+    background-color: #f2f2f2;
+}
+
+#end
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
