@@ -1,0 +1,964 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    font-family: raleway, sans-serif;
+    margin:   0 auto;
+}
+h2
+{
+    font-size: 18px;
+}
+
+h3
+{
+    font-size: 16px;
+}
+
+.bleu
+{
+    color: #0065fc;
+}
+
+.grey
+{
+    color: #f2f2f2;
+}
+
+
+
+ul
+{
+    list-style-type: none;
+} 
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+section
+{
+    margin-top: 50px;
+}
+
+/* Header*/
+
+header
+{
+    max-width: 1340px;
+    margin: 50px 50px 30px 50px;
+    
+}
+header #logo_nav 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+
+nav ul
+{
+    margin: 16px 8px;
+    text-align: center;
+}
+
+nav li
+{
+    display: inline;
+}
+
+header nav a
+{
+    display: inline-block;
+    padding: 8px 25px;
+}
+
+
+header nav a:hover /*aucun espace entre le a et hover afin de permettre que cela s'applique à l'ensemble des liens du nav*/
+{
+    border-top: 2px solid #0065fc;
+    color: green;
+}
+
+
+.unique
+{
+    border-top: #0065fc 2px solid;
+
+}
+
+/*Main part*/
+
+main
+{
+    max-width: 1340px;
+    margin: 20px 50px;
+    /*max-width: 100%; a voir si impact
+    margin: 0 auto;*/
+}
+
+/*Recherche*/
+
+#Recherche
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px; 
+    margin-left: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#Recherche i
+{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 10px 0px 0px 10px;
+    width: 24px;
+    height: 50px
+}
+
+.ville
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right-width: 0;
+    padding-left: auto;/*5px*/
+    width: auto;
+    height: 50px;
+}
+
+.selection
+{
+    height: 50px;
+    width: auto;
+    display: flex;
+    border: #f2f2f2 solid 1px;
+    font-weight: bold;
+    padding-left: 52px;
+    border-left-style: none;
+    border-right-style: none;
+}
+
+.rechercher
+{
+    display: flex;
+    background-color: #0065fc;
+    font-weight: bold;
+    justify-content: center;
+    width: 112px;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.rechercher a
+{
+    color: #ffffff;
+}
+
+.rechercher:hover
+{
+    background-color: #0447ac;
+    transition: ease 0.3s;
+}
+
+/*Filtres*/
+
+#Filtres div
+{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    padding-right: 15px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#Filtres div :hover
+{
+    background-color: #deebff;
+}
+
+#Filtres div :hover .icone
+{
+    background-color: #ffffff;
+}
+
+#Filtres
+{
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+#Filtres h3
+{
+    display: flex;
+    align-items: center;
+    margin: 0 30px 15px 0;
+}
+
+#filter i
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #deebff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /*margin: -2px;*/
+    margin-right: 15px;
+    border: none;
+    color: #0065fc;
+    
+}
+
+.choix-filtre
+{
+    border: 2px solid #f2f2f2;
+
+}
+
+.info-dispo
+{
+    display: flex;
+   /*align-items: center;*/
+    justify-content: flex-start;
+    margin: 15px 0 30px 0;
+}
+
+.info-logement-ville
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #0065fc;
+    border: solid 1px #f2f2f2;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+/*Animation cartes Hébergements et Activités*/
+.animation_carte:hover
+{
+    transform: scale(1.1);
+    transition: 0.5S ease;
+}
+
+/*Section hébergements*/
+
+#Hébergements
+{
+    max-width: 100%;
+    height: 625px;
+    margin-top: 40px;
+    display: flex;
+}
+
+.nom-du-site h3
+{
+    padding-top: 10px;
+}
+
+.titre
+{
+    padding-left: 40px;   
+} 
+
+.all
+{
+    max-width: 880px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    
+}
+
+
+.all h2
+
+{
+    padding: 40px 40px 20px 40px; /*Vérifier si ce n'est pas un doublon avec .titre plus haut. élément existant au 09/6/2021*/
+}
+
+#Hébergement
+{
+  
+    max-width: 800px;
+    height: 430px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px 30px 30px 40px;
+    
+}
+
+.logements
+{
+    max-width: 250px;
+    height: 200px;
+    border: 3px solid #f2f2f2;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px #0000002e; /*Vérifier la couleur*/
+    box-sizing: border-box;
+}
+
+.logements img
+{
+    width: 235px;
+    height: 115px;
+    /*max-height: 100%;*/
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.nom-du-site
+{
+    padding-left:  20px;
+}
+
+#Populaires
+{
+    height: 625px;
+    margin-left: 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px
+}
+
+#Populaires a
+{
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto; /*permet d'éviter les déplacements de contenu*/
+}
+
+.pop h2
+{
+    padding: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.most
+{
+    max-width: 315px; /*auparavant width*/
+   /* max-width: 100%;rajouter le 14/06/2021 a 4h*/
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 40px 30px 40px; /*auparavant 25px en haut*/
+}
+
+
+.popular img
+{
+    width: 130px;
+    height: 135px;
+    float: left;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+    /*position: absolute; /*a voir de plus prêt*/
+}
+
+.popular
+{
+    max-width: 350px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px #0000002e; /*Vérifier la couleur*/
+    transition-duration: 0,2s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.popular i
+{
+    padding-top: 40px;
+}
+
+
+/*Activités*/
+
+#Activités
+{
+    height: 615px;
+    /*max-width: 100%;ajouter le 14/06/2021 a 5h*/
+}
+
+.last
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 450px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.activity
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    width: 300px;
+   
+}
+
+
+.bloc
+{
+    background-color: #ffffff;
+    border: 3px solid #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px #f2f2f2;
+   
+    
+}
+
+
+.grand img
+{
+    width: 100%;
+   /* width: 305px;*/
+    height: 390px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.pomegues img
+{
+    /*width: 305px;*/
+    width: 100%;
+    height: 180px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.frioul img
+{
+   /* order: 2;*/
+    width: 100%;
+    /*width: 305px;*/
+    max-height: 110px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.notre_dame img
+{
+    width: 100%;
+    /*width: 305px;*/
+    height: 142px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.longchamp img
+{
+    width: 100%;
+    /*width: 305px;*/
+    height: 155px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+footer /*revoir les dimensions du footer*/
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    
+}
+
+#end
+{
+   width: 1340px;
+   display: flex;
+   justify-content: space-between;
+   margin: 30px 50px 30px 50px; /*vérifier s'il faut l'appliquer sur le end ou fin*/
+   
+}
+
+.fin
+{
+    width: 35%;
+    
+}
+
+.fin ul
+{
+    padding: 25px 0 20px 0; /*a corriger également*/
+}
+.fin li
+{
+    padding: 10px 0;
+}
+
+/*Responsive tablette*/
+
+
+@media all and (max-width: 767px)
+
+{
+
+    header
+    {
+        max-height: 100%;
+        margin: 20px;
+        /*max-width: 425px;*/
+    }
+
+    header #logo_nav
+    {
+        display: flex;
+        justify-content: space-between;
+        /*align-items: flex-start;*/
+        flex-flow: nowrap;
+        flex-wrap: wrap;
+    }
+   /* .nav 
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }*/
+
+   /* nav ul 
+    {
+        margin: 0 30px;
+       /* display: inline-block;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row-reverse; non compris
+    } Test de ce soir*/
+
+    nav ul 
+    {
+        padding: 0;
+        margin-right: 30px;
+    }
+
+   /*nav li 
+    {
+        margin-left: 2px;
+    }*/
+
+    nav ul li a
+    {
+       /* display: block;*/
+        text-align: center;
+        padding: 5px;
+        
+        /*justify-content: space-between;*/
+        /*flex-wrap: wrap;*/
+    }
+
+  /*  nav li 
+    {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }*/
+    
+    .unique
+    {
+        border-bottom: #0065fc 2px solid;
+        border-top: none;
+    }
+    main
+    {
+        /*width: 100%;*/
+        margin: 20px 0;
+   
+    }
+
+    #infos
+    {
+        margin: 0 20px;
+    }
+
+    #Filtres div
+    {
+        margin-right: 8px;
+        
+    }
+  
+    #filter
+    {
+        flex-wrap: wrap;
+    }
+
+   #Hébergements
+    {
+       flex-direction: column-reverse;
+        height: auto;
+    
+    }
+
+
+    #Populaires
+    {
+        margin-left: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .most
+    {
+        max-width: 100%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 20px 30px 20px;
+    }
+
+
+    .popular
+    {
+        max-width: 100%;
+    }
+
+    .all
+    {
+        background-color: #ffffff;
+        width: auto;
+        height: auto;
+        margin: 0 20px;
+        
+    }
+
+    .all h2
+    {
+        padding: 40px 0 20px 0;  /*Vérifier si ce n'est pas un doublon avec .titre plus haut. élément existant au 09/6/2021*/
+    }   
+    #Hébergement
+    {
+       width: 100%;
+       height: 1260px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+        margin: 0;
+    }
+
+    .logements
+    {
+        max-width: 385px;
+        height: 200px;
+    }
+
+    .logements img
+    {
+        width: 380px;
+    }
+
+    .titre
+    {
+        padding: 30px 20px 20px 0;
+    }
+
+    #Activités
+    {
+        height: auto;
+        margin: 0 20px;
+        
+    }
+
+    .last
+    {   
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    }
+
+    .activity
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .special
+
+    {
+        display: block;
+        justify-content: space-around;
+    }
+
+    .bloc
+    {
+        width: 380px;
+        height: 190px;
+    }
+
+    .bloc img 
+    {
+        height: 135px;
+    }
+
+    #end
+    {
+        flex-direction: column;
+        width: 100%;
+        margin: 30px 20px 30px 20px;
+    }
+
+    .fin
+    {
+        width: 100%;
+    }
+
+    /* #Héberhements éléments mis entre parenthèse ce soir jusqu'à most
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .all /* avant  c'était #Hébergement pas touché le 19*/
+   /* {
+        width: 100%;
+        flex-direction: column;
+       /* flex-wrap: wrap;
+        height: auto;
+        background-color: #ffffff;
+    }
+
+    #Populaires
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+    .most
+    {
+        width: auto; 
+    }*/
+
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1023px)
+{
+    header
+    {
+        width: 95%;
+        margin: 20px;
+    }
+
+    main 
+    {
+        width: 95%;
+        margin: 20px;
+    
+    }
+    #Filtres div  /* Faire remonter les élements au niveau de la filtres*/
+    {
+        margin-right: 30px;
+        flex-wrap: wrap;
+    }
+  
+   /*#filter
+    {
+        flex-wrap: wrap;
+    }*/
+
+    #Hébergements
+    {
+       /* width: 95%;*/
+       flex-direction: column-reverse;
+        height: auto;
+        background-color: #ffffff;
+    }
+    .all
+    {
+        /*width: 100%;*/
+        background-color: #f2f2f2;
+        width: auto;
+        height: auto;
+
+        #Populaires
+    {
+        margin-left: 0;
+        width: 95%;
+    }
+
+        
+    }
+    #Hébergement
+    {
+       width: 95%;
+       height: auto;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+        margin: 0; /*25px 30px 40px*/
+    }
+
+    .activity
+    {
+        /*width: 95%;*/
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .last
+    {
+        flex-direction: row; 
+    }
+    
+ /*  .grand img
+{
+    width: 100%;
+    height: 142px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.pomegues img
+{
+    width: 100%;
+    height: 142px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.frioul img
+{
+    width: 100%;
+    max-height: 110px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.notre_dame img
+{
+    width: 100%;
+    height: 142px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.longchamp img
+{
+    width: 100%;
+    height: 0;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}*/
+#end
+{
+    width: 95%;
+}
+}
+
+
+
+
+
+@media  and (min-width: 1024px) and (max-width: 1439px)
+{
+    header
+    {
+        width: 90%;
+        margin: 20px;
+    }
+    main
+    {
+        width: 90%;
+        margin: 20px;
+    }
+    #Hébergements
+    {
+       /*max-width: 90%;*/
+        flex-direction: column-reverse;
+        height: auto;
+        /*background-color: #ffffff;*/
+    }
+    .all
+    {
+        
+       /* background-color: #f2f2f2;*/
+        width: auto;
+        height: auto;
+
+        #Populaires
+    {
+        margin-left: 0;
+        width: 90%;
+    }
+
+        
+    }
+    #Hébergement
+    {
+       width: 90%;
+       height: auto;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+        margin: 0; /*25px 30px 40px
+    }*/
+
+    
+}
+
+}
+/*{
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+
+    nav ul 
+    {
+        flex-direction: column;
+    }
+
+    nav li 
+    {
+        padding-left: 4px;
+    }
+    
+    nav a 
+    {
+        font-size: 1,1em;
+    }
+
+    #Hébergements
+    {
+        flex-direction: column;
+    }
+
+    .all, #Populaires
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+}
+
