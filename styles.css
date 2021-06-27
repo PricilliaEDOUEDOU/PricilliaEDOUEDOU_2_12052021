@@ -311,7 +311,7 @@ main
 
 .logements
 {
-    max-width: 250px;
+    width: 250px;
     height: 200px;
     border: 3px solid #f2f2f2;
     border-radius: 20px;
@@ -322,7 +322,7 @@ main
 
 .logements img
 {
-    width: 235px;
+    width: 243px;
     height: 115px;
     /*max-height: 100%;*/
     border-radius: 20px 20px 0px 0px;
@@ -377,7 +377,6 @@ main
     float: left;
     border-radius: 20px 0px 0px 20px;
     object-fit: cover;
-    /*position: absolute; /*a voir de plus prêt*/
 }
 
 .popular
@@ -534,14 +533,18 @@ footer /*revoir les dimensions du footer*/
         /*max-width: 425px;*/
     }
 
-    header #logo_nav
+    
+
+   /* header #logo_nav enlever juste le début et la fin
     {
         display: flex;
         justify-content: space-between;
-        /*align-items: flex-start;*/
+        /*align-items: flex-start;*
         flex-flow: nowrap;
         flex-wrap: wrap;
-    }
+    }*/
+
+    
    /* .nav 
     {
         display: flex;
@@ -662,7 +665,7 @@ footer /*revoir les dimensions du footer*/
 
     .logements
     {
-        max-width: 385px;
+        width: 385px;
         height: 200px;
     }
 
@@ -691,6 +694,7 @@ footer /*revoir les dimensions du footer*/
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        height: 1250px;
         
     }
 
@@ -699,26 +703,25 @@ footer /*revoir les dimensions du footer*/
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 225px;
         width: auto;
-    }
-    /*.special
-
-    {
-        
-        display: block;
-        justify-content: space-around;
-    }*/
-
-    .bloc
-    {
-        /*width: 380px;*/
         height: 190px;
     }
 
-    .bloc img 
+   /* .activity
     {
-        max-height: 135px;
+        width: 350px;
+        height: 170px;
+    }*/
+
+    /*.bloc
+    {
+        /*width: 380px;*
+        height: 190px;
+    }*/
+
+    .activity img 
+    {
+        height: 155px;/*155*/
     }
 
 
@@ -839,7 +842,7 @@ footer /*revoir les dimensions du footer*/
 
     .logements
     {
-        max-width: 48%;/*385px*/
+        width: 360px;/*385px*/
         height: 200px;/*200px*/
     }
 
@@ -856,25 +859,9 @@ footer /*revoir les dimensions du footer*/
     #activites
     {
        /* height: auto;*/
-        margin: 30px 20px 0 20px;
-        
+        margin: 30px 20px 0 20px;  
         
     }
-
-    /*.activity
-    {
-        /*width: 95%;
-        height: 100%;
-        flex-wrap: wrap;
-    }*/
-
-   /* .last
-    {
-        flex-direction: row;
-        /*flex-wrap: wrap; *
-    }*/
-
-    
 
    .last
     {   
@@ -882,8 +869,7 @@ footer /*revoir les dimensions du footer*/
         height: 600px;
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
-        
+        flex-direction: row;   
     }
 
     .activity
@@ -899,9 +885,6 @@ footer /*revoir les dimensions du footer*/
     }
     
 
-    
-
-
     #end
     {
         width: 95%;
@@ -913,6 +896,169 @@ footer /*revoir les dimensions du footer*/
 
 @media all and (min-width: 1024px) and (max-width: 1439px)
 {
+
+    header
+    {
+        margin: 20px;
+    }
+    main
+    {
+        margin: 20px;
+    }
+    #hebergements
+    {
+        /*width: 100%;*/
+        flex-direction: column-reverse;
+        height: auto;
+        /*background-color: #ffffff;*/
+    }
+
+    #Populaires
+    {
+        margin-left: 0;
+        height: 300px;
+    }
+
+    .most
+    {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px; /*auparavant 25px en haut*/
+        height: 0;
+    }
+
+    .popular
+    {
+        width: 305px;
+        height: 142px;
+    }
+
+    /*.popular img
+    {
+       /* width: 130px;
+        height: 190px;*
+        float: left;
+        border-radius: 20px 0px 0px 20px;
+        object-fit: cover;
+    }*/
+
+    .all
+    {
+        
+       /* background-color: #f2f2f2;*/
+        /*max-width: 1439px;*/
+        max-width: 100%;
+        /*height: auto;*/
+        margin-top: 20px;
+
+    }
+
+    .all h2
+    {
+        padding: 40px 20px 20px 20px;
+    }
+
+        
+    #hebergement
+    {
+       max-width: 100%;
+       /*height: auto;*/
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       margin: 0 20px 20px 20px;/*25px 30px 40px*/
+    }
+
+    .logements
+    {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .logements img
+    {
+        width: 292px;
+        height: 115px;
+    }
+
+    .titre 
+    {
+        padding: 20px;
+    }
+
+
+
+
+    #activites
+    {
+        height: auto;
+        margin: 30px 0 0 0;  
+        
+    }
+
+   .last
+    {   
+        width: 100%;/*rajouter le 26/06/2021*/
+       /* height: 600px;*/
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;   
+    }
+
+    .activity
+    {
+        width: 300px;
+        height: 200px;
+    }
+
+
+   .activity img 
+    {
+        height: 150px;
+    }
+
+    #end
+    {
+        margin: 30px 20px 30px 20px;
+    }
+   /* #activites
+    {
+        height: auto;
+        margin: 60px 30px 0 30px;
+        /*max-width: 100%;ajouter le 14/06/2021 a 5h*
+    }
+
+    .last
+    {   
+        width: 100%;
+        height: 1355px;
+        display: flex;
+        justify-content: space-between; 
+        
+    }
+    .activity
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .bloc
+    {
+        width: 320px;
+        height: 190px;
+
+    }
+
+    .bloc img 
+    {
+        height: 135px;
+    }*/
 
 }
 
