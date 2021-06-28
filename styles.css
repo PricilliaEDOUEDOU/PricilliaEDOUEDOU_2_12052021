@@ -30,7 +30,6 @@ h3
 }
 
 
-
 ul
 {
     list-style-type: none;
@@ -54,7 +53,7 @@ header
     margin: 50px 50px 30px 50px;
     
 }
-header #logo_nav 
+header #logo_nav
 {
     display: flex;
     align-items: center;
@@ -163,10 +162,12 @@ main
     border-radius: 0 10px 10px 0;
 }
 
-.rechercher a
+.rechercher::before
 {
+    content: "Rechercher";
     color: #ffffff;
 }
+
 
 .rechercher:hover
 {
@@ -528,55 +529,56 @@ footer /*revoir les dimensions du footer*/
 
     header
     {
-        max-height: 100%;
+        /*height: 100%;*/
         margin: 20px;
         /*max-width: 425px;*/
     }
-
-    
-
-   /* header #logo_nav enlever juste le début et la fin
+    header #logo_nav
     {
         display: flex;
-        justify-content: space-between;
-        /*align-items: flex-start;*
-        flex-flow: nowrap;
-        flex-wrap: wrap;
+    }
+
+
+    /*.logo
+    {
+        position: relative;
     }*/
 
-    
-   /* .nav 
+   /* nav ul
     {
-        display: flex;
+        margin: 0;
+        text-align: start;
         flex-direction: row-reverse;
     }*/
 
-   /* nav ul 
-    {
-        margin: 0 30px;
-       /* display: inline-block;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: row-reverse; non compris
-    } Test de ce soir*/
+   
 
-    nav ul 
-    {
-        padding: 0;
-        margin-right: 30px;
-    }
 
-   /*nav li 
-    {
-        margin-left: 2px;
-    }*/
 
-    nav ul li a
-    {
-        text-align: center;
-        padding: 5px;
-    }
-    
+
+
+
+/*nav ul
+{
+    margin: 16px 8px;
+    text-align: center;
+}
+
+
+
+header nav a
+{
+    display: inline-block;
+    padding: 8px 25px;*/
+
+
+
+
+
+
+
+
+
     .unique
     {
         border-bottom: #0065fc 2px solid;
@@ -587,6 +589,26 @@ footer /*revoir les dimensions du footer*/
         /*width: 100%;*/
         margin: 20px 0;
    
+    }
+
+
+    .rechercher
+{
+    display: flex;
+    background-color: #0065fc;
+    font-weight: bold;
+    justify-content: center;
+    width: 112px;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+}
+
+    .rechercher::before
+    {
+        content: "\f002";
+        color: #ffffff;
+        font-family: "Font Awesome 5 Free";
+        
     }
 
     #infos
@@ -725,6 +747,8 @@ footer /*revoir les dimensions du footer*/
     }
 
 
+    footer 
+
     #end
     {
         flex-direction: column;
@@ -842,7 +866,7 @@ footer /*revoir les dimensions du footer*/
 
     .logements
     {
-        width: 360px;/*385px*/
+        width: 360px;
         height: 200px;/*200px*/
     }
 
@@ -935,14 +959,12 @@ footer /*revoir les dimensions du footer*/
         height: 142px;
     }
 
-    /*.popular img
+    .popular img
     {
-       /* width: 130px;
-        height: 190px;*
-        float: left;
-        border-radius: 20px 0px 0px 20px;
-        object-fit: cover;
-    }*/
+       width: 128px;
+       height: auto;
+    
+    }
 
     .all
     {
@@ -1005,7 +1027,8 @@ footer /*revoir les dimensions du footer*/
        /* height: 600px;*/
         display: flex;
         justify-content: space-between;
-        flex-direction: row;   
+        flex-direction: row; 
+        
     }
 
     .activity
@@ -1024,41 +1047,6 @@ footer /*revoir les dimensions du footer*/
     {
         margin: 30px 20px 30px 20px;
     }
-   /* #activites
-    {
-        height: auto;
-        margin: 60px 30px 0 30px;
-        /*max-width: 100%;ajouter le 14/06/2021 a 5h*
-    }
-
-    .last
-    {   
-        width: 100%;
-        height: 1355px;
-        display: flex;
-        justify-content: space-between; 
-        
-    }
-    .activity
-    {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-    .bloc
-    {
-        width: 320px;
-        height: 190px;
-
-    }
-
-    .bloc img 
-    {
-        height: 135px;
-    }*/
-
+   
 }
 
