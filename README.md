@@ -12,3 +12,8 @@
 - Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.
 - La police du site est Raleway.
 - Utilisation de HTML, CSS et Flexbox (pas de framework ou pré-compilateur CSS pour ce projet).
+
+### Liens et Pages
+
+- Projet Github => https://github.com/PricilliaEDOUEDOU/Reservia
+- URL du site hébergé => https://pricilliaedouedou.github.io/Reservia/
