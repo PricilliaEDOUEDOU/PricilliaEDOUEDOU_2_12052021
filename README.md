@@ -15,5 +15,5 @@
 
 ### Liens et Pages
 
-- Projet Github => https://github.com/PricilliaEDOUEDOU/Reservia
-- URL du site hébergé => https://pricilliaedouedou.github.io/Reservia/
+- Projet Github => https://github.com/PricilliaEDOUEDOU/PricilliaEDOUEDOU_2_12052021
+- URL du site hébergé => https://pricilliaedouedou.github.io/PricilliaEDOUEDOU_2_12052021/
