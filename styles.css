@@ -11,6 +11,13 @@ body
     font-family: raleway, sans-serif;
     margin: 0;
 }
+
+.wrapper
+{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 h2
 {
     font-size: 18px;
@@ -68,13 +75,10 @@ section
     padding-top: 10px;
 }
 
-
-
 /* Header*/
 
 header
 {
-    max-width: 1340px;
     margin: 50px 50px 30px 50px;
     
 }
@@ -104,14 +108,8 @@ header nav a
 
 header nav a:hover /*aucun espace entre le a et hover afin de permettre que cela s'applique à l'ensemble des liens du nav*/
 {
-    color: green;
-}
-
-
-.unique
-{
+    color: #0065fc;
     border-top: #0065fc 2px solid;
-
 }
 
 /*Animation cartes Hébergements et Activités*/
@@ -121,12 +119,10 @@ header nav a:hover /*aucun espace entre le a et hover afin de permettre que cela
     transition: 0.5S ease;
 }
 
-
 /*Main part*/
 
 main
 {
-    max-width: 1340px;
     margin: 20px 50px;
 }
 
@@ -502,7 +498,7 @@ footer
 #end
 {
     width: 100%;
-    max-width: 1340px;
+    max-width: 1300px;
     display: flex;
     justify-content: space-between;
     margin: 30px 50px 30px 50px;
@@ -547,13 +543,13 @@ footer
         margin-top: 2px;
     }
 
-#logo_nav
+    #logo_nav
     {   
         flex-wrap: wrap;
     }   
 
 
-.nav ul 
+    .nav ul 
     {
         width: 100%;
         border-bottom: 3px solid #f2f2f2;
@@ -561,12 +557,12 @@ footer
         position: relative;
     }
 
-nav li
+    nav li
     {
         width: 100%;
     }
 
-.inscription
+    .inscription
     {
         position: absolute;
         right: 3px; 
@@ -576,18 +572,17 @@ nav li
     
     header nav a
     {
-        padding: 8px 70px 0 20px;
-        border-bottom: #f2f2f2 3px solid;
-        text-decoration: solid #f2f2f2;
+        padding: 8px 60px 0 20px;
+        border-bottom: #f2f2f2 2px solid;
     }
 
-
-    .unique
+    header nav a:hover /*aucun espace entre le a et hover afin de permettre que cela s'applique à l'ensemble des liens du nav*/
     {
-        border-bottom: #0065fc 3px solid;
+        color: #0065fc;
+        border-bottom: #0065fc 2px solid;
         border-top: none;
-        
     }
+
 
     /*Main*/
 
